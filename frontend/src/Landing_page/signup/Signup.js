@@ -78,7 +78,7 @@ function Signup() {
 
             console.log('Signup successful:', response.data);
             // Redirect to dashboard after successful signup
-            window.location.href = 'http://localhost:3005';
+            window.location.href = 'http://localhost:3001';
         } catch (error) {
             console.error('Signup error:', error);
             if (error.response?.data?.error) {

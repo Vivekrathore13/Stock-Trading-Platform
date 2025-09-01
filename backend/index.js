@@ -20,11 +20,21 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002', 'http://localhost:3004', 'http://localhost:3005'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002', 'http://localhost:3003', 'http://localhost:3004', 'http://localhost:3005'],
   credentials: true
 }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+
+// Health check route
+app.get("/", (req, res) => {
+  res.json({ message: "Zerodha Clone Backend API is running!", status: "OK" });
+});
+
+// API health check
+app.get("/health", (req, res) => {
+  res.json({ status: "OK", timestamp: new Date().toISOString() });
+});
 
 // app.get("/addHoldings", async (req, res) => {
 //   let tempHoldings = [

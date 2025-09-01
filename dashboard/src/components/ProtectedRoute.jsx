@@ -26,7 +26,7 @@ const ProtectedRoute = ({ children }) => {
             <p>{error}</p>
             <hr />
             <p className="mb-0">
-              <a href="http://localhost:3004/login" className="btn btn-primary">
+              <a href="http://localhost:3000/login" className="btn btn-primary">
                 Go to Login
               </a>
             </p>
@@ -38,7 +38,7 @@ const ProtectedRoute = ({ children }) => {
 
   if (!user) {
     // Redirect to login page
-    window.location.href = 'http://localhost:3004/login';
+    window.location.href = 'http://localhost:3000/login';
     return (
       <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
         <div className="text-center">

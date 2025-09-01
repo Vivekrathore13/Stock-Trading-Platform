@@ -44,7 +44,7 @@ const SellActionWindow = ({ uid }) => {
       if (error.response?.status === 401) {
         setMessage("Please login to place orders. Redirecting...");
         setTimeout(() => {
-          window.location.href = 'http://localhost:3004/login';
+          window.location.href = 'http://localhost:3003/login';
         }, 3000);
       } else {
         setMessage(error.response?.data?.error || "Failed to place sell order. Please try again.");

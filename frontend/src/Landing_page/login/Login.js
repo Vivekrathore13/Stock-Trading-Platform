@@ -63,7 +63,7 @@ function Login() {
 
             console.log('Login successful:', response.data);
             // Redirect to dashboard after successful login
-            window.location.href = 'http://localhost:3005';
+            window.location.href = 'http://localhost:3001';
         } catch (error) {
             console.error('Login error:', error);
             if (error.response?.data?.error) {

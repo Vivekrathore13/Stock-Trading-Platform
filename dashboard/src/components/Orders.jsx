@@ -19,7 +19,7 @@ const Orders = () => {
         if (error.response?.status === 401) {
           setError("Please login to view orders");
           setTimeout(() => {
-            window.location.href = 'http://localhost:3004/login';
+            window.location.href = 'http://localhost:3003/login';
           }, 2000);
         } else {
           setError("Failed to fetch orders");

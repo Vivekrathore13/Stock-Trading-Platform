@@ -62,8 +62,8 @@ export const AuthProvider = ({ children }) => {
     } finally {
       setUser(null);
       setError('');
-      // Redirect to frontend login
-      window.location.href = 'http://localhost:3004/login';
+      // Redirect to frontend login page
+      window.location.href = 'http://localhost:3000/login';
     }
   };
 

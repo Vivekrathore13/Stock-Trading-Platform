@@ -2,11 +2,6 @@
 
 A comprehensive clone of the Zerodha trading platform built with React, Node.js, and MongoDB. Features a complete trading dashboard, landing page, and backend API with authentication.
 
-![React](https://img.shields.io/badge/React-19.1.1-blue)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-
 ## 🚀 Features
 
 ### 📊 Trading Dashboard
@@ -28,13 +23,61 @@ A comprehensive clone of the Zerodha trading platform built with React, Node.js,
 - **MongoDB Integration** - Efficient data storage and retrieval
 - **CORS & Security** - Protected routes and middleware
 
+## 📝 Project Overview
+
+1. **Login / Signup**
+   - Users start by creating an account or logging in.
+   - Authentication is secured with JWT.
+
+2. **Frontend Landing Page**
+   - The first page contains a brief overview of the project and its features.
+   - Users can navigate to login/signup from here.
+
+3. **Dashboard**
+   - After login, users land on the dashboard.
+   - The dashboard shows portfolio overview, watchlist, and buy/sell options.
+
+4. **Features**
+   - Users can add stocks to their watchlist.
+   - Users can buy or sell stocks, which updates their portfolio.
+   - Interactive charts show profit/loss and portfolio performance.
+   - Dark/light theme toggle and responsive design for mobile devices.
+
+---
+
+## 🚀 Features
+
+### Core
+- 🔐 **User Authentication** (Login/Signup/Logout) using JWT  
+- 📊 **Interactive Portfolio Dashboard** with P&L charts  
+- ⭐ **Stock Watchlist** (add/remove stocks)  
+- 💹 **Buy & Sell Stocks** (simulated trading)  
+- 📱 **Responsive Design** (mobile, tablet, desktop)  
+- 🌗 **Dark/Light Theme Toggle** with persistence  
+
+### Additional
+- 📈 **Interactive Charts** using Chart.js  
+- 🔍 **Stock Search** functionality  
+- 💾 **Data Persistence** with LocalStorage  
+
+---
+
 ## 🛠️ Tech Stack
 
-| Component | Technology | Port |
-|-----------|------------|------|
-| **Frontend** | React 19.1.1, React Router, Chart.js, Axios | 3000 |
-| **Dashboard** | React 19.1.1, Material-UI, Tailwind CSS, Framer Motion | 3001 |
-| **Backend** | Node.js, Express.js, MongoDB, Mongoose, JWT | 3002 |
+**Frontend**  
+- React.js  
+- JavaScript (ES6+)  
+- HTML5, CSS3, Bootstrap  
+- Chart.js  
+
+**Backend**  
+- Node.js  
+- Express.js  
+- MongoDB  
+
+**Other**  
+- JWT Authentication  
+- Context API (state management)  
 
 ## 📁 Project Structure
 
@@ -50,8 +93,17 @@ Zerodha Clone/
 │   ├── 📂 model/        # Database models
 │   ├── 📂 schemas/      # Mongoose schemas
 │   └── 📂 middleware/   # Auth middleware
-└── 📂 screenshots/      # Project screenshots
+
+
 ```
+Home Page
+![image alt](https://github.com/Vivekrathore13/Stock-Trading-Platform/blob/4e59cbf1a01f0b6cc8a2412ab6b327750ffefc62/Screenshot%20(45).png)
+Login/Signup
+![image alt](https://github.com/Vivekrathore13/Stock-Trading-Platform/blob/4e59cbf1a01f0b6cc8a2412ab6b327750ffefc62/Screenshot%20(46).png)
+Dashboard
+![image alt](https://github.com/Vivekrathore13/Stock-Trading-Platform/blob/4e59cbf1a01f0b6cc8a2412ab6b327750ffefc62/Screenshot%20(47).png)
+WatchList
+![image alt](https://github.com/Vivekrathore13/Stock-Trading-Platform/blob/4e59cbf1a01f0b6cc8a2412ab6b327750ffefc62/Screenshot%20(48).png)
 
 ## 🚀 Quick Start
 
@@ -160,51 +212,8 @@ cd dashboard && npm start
 - **Input Validation** - Server-side validation
 - **CORS Protection** - Cross-origin security
 - **Protected Routes** - Authentication middleware
-
-## 🚀 Deployment
-
-### Environment Variables
-```env
-# Production
-NODE_ENV=production
-MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net/zerodha-clone
-JWT_SECRET=your-super-secret-jwt-key
-FRONTEND_URL=https://your-frontend-domain.com
-DASHBOARD_URL=https://your-dashboard-domain.com
 ```
 
-### Deployment Platforms
-- **Backend**: Heroku, Railway, AWS EC2
-- **Frontend**: Vercel, Netlify
-- **Database**: MongoDB Atlas
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by [Zerodha](https://zerodha.com/) - India's largest stock broker
-- Built for educational purposes
-- Thanks to the open-source community
-
-## 📞 Contact
-
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-
----
-
-⭐ **Star this repository if you found it helpful!**
-
-![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red)
-![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
